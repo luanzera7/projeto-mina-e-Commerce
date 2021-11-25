@@ -1,0 +1,320 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    height:786px;
+}
+
+/* começo do site (menu navegação e imagem principal) */
+
+.logotipo{
+    padding: 15px;
+    
+}
+
+.container{
+    width: 100vw; /*view width */
+    height: 100vh; /*view height*/
+    background-image: url(../imagens/imagemprincipal.png);
+    background-size: cover;
+    overflow: 150px;
+    
+    
+}
+
+
+
+
+.header-top{
+    background-color: white;
+    height: 10px;
+    position: relative;
+}
+
+.header-nav{
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.header-nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px 0 0;
+    padding: 10px;
+    
+}
+
+.header-nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.header-nav a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.header-nav a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* conteudo header do site */
+
+.container h1{
+    
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: normal;
+    
+}
+
+.subtituloprincipal{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.shopnow{
+    text-align: center;
+    
+}
+
+.shopnow a{
+    list-style: none;
+    text-transform: none;
+    text-decoration: none;
+    color: #4f1f55; 
+    background-color: white;
+    padding: 18px;
+    border: 2px solid white;
+    border: border-box;
+    text-align: center;
+}
+
+/* bestseller */
+
+.bestesellertitulo{
+    text-align: center;
+    font-size: 35px;
+    color: #4f1f55;
+    padding: 55px 100px;
+}
+
+section{
+    width: 100%;
+}
+
+.card{
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+}
+
+.card p{
+    padding: 2px;
+    color: #4f1f55;
+    letter-spacing: 5px;
+    font-weight: normal;
+    font-size: 18px;
+    
+}
+
+.shopnow2 a{
+    list-style: none;
+    text-decoration: none;
+    text-transform: none;
+    color: #4f1f55;
+    
+}
+
+.shopnow2{
+    text-align: center;
+    padding: 55px 100px;
+    font-size: 20px;
+
+}
+
+/* seção banner - não consegui fazer essa PORRA */
+
+
+.bannertitulo{
+    text-align: center;
+    color: black;
+    font-size: 100px;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: normal;
+}
+
+.bannersubtitulo{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: normal;
+}
+
+/* about */
+
+.gallery2{
+    margin-left: 40px;
+}
+
+.cardabout{
+    display: inline-block;
+    width: 48%;
+    
+}
+
+.aboutmina{
+    padding: 2px;
+    color: #4f1f55;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.subtituloabout{
+    color: #6e4e74;
+    font-size: 23px;
+}
+
+.cardabout a{
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: none;
+    border: 2px solid #6e4e74;
+}
+
+
+/* newsletter - estou tentando problema em redimensionar as imagens :( */
+
+.news{
+    margin-top: 80px;
+    background-image: url(../imagens/newsletter.png);
+    width: 100vw; /*view width */
+    height: 100vh; /*view height*/
+    
+}
+
+.news h2{
+    position: absolute;
+    margin-left: 490px;
+    margin-top: 220px;
+    font-weight: normal;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+.news p{ /*só demonstrativo*/
+
+    position: absolute;
+    text-align: center;
+    margin-left: 510px;
+    margin-top: 340px;
+    font-weight: normal;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 60px;
+    background-color: #000;
+    background: rgba(0,0,0, 0.3);
+}
+
+.news a{
+    position: absolute;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 30px;
+    font-weight: normal;
+    color: #6e4e74 ;
+    font-size: 20px;
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    background-color: white;
+    padding: 15px 30px;
+}
+
+/* instagram */
+
+.istagramtexto{
+    padding: 50px 100px;
+    text-align: center;
+    font-size: 45px;
+    color: #4f1f55;
+}
+
+.instagram{
+    width: 100%;
+}
+
+.instagramfotos{
+    margin-left: 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+.arroba{
+    padding: 50px 100px;
+    text-align: center;
+    font-size: 35px;
+    color: #4f1f55;
+}
+
+.arroba a{
+    text-transform: none;
+    text-decoration: none;
+}
+
+
+/* rodapé */
+
+footer p{
+    text-transform: uppercase;
+    font-size:15px;
+}
+
+footer{ /*coloquei qualquer cor*/
+    background-color: #ccc;
+    padding: 50px;
+}
+
+footer li{
+    
+    display: inline-block;
+    text-align: left;
+    list-style: none;
+    width: 3%;
+
+
+}
+
